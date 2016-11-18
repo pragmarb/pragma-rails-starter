@@ -12,15 +12,6 @@ gem 'puma'
 gem 'procodile'
 gem 'figaro'
 
-# Sprockets
-gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-
-# Assets
-gem 'jquery-rails'
-gem 'turbolinks'
-
 group :development do
   # Preloading
   gem 'spring'
