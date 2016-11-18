@@ -12,6 +12,11 @@ gem 'puma'
 gem 'procodile'
 gem 'figaro'
 
+group :production do
+  # Heroku
+  gem 'rails_12factor'
+end
+
 group :development do
   # Preloading
   gem 'spring'
