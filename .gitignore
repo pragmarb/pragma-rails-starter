@@ -19,3 +19,8 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore configuration files.
+/config/database.yml
+/config/application.yml
+Procfile.local

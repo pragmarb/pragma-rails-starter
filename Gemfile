@@ -7,8 +7,10 @@ gem 'rails', '~> 5.0.0'
 # ActiveRecord
 gem 'pg'
 
-# Web server
+# Orchestration
 gem 'puma'
+gem 'procodile'
+gem 'figaro'
 
 # Sprockets
 gem 'sass-rails'
