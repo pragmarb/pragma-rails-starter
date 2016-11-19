@@ -74,7 +74,6 @@ GEM
       activesupport (>= 4.1.0)
     hashdiff (0.3.0)
     i18n (0.7.0)
-    interception (0.5)
     json (2.0.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -105,9 +104,6 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
-    pry-rescue (1.4.4)
-      interception (>= 0.5)
-      pry
     public_suffix (2.0.4)
     puma (3.6.0)
     rack (2.0.1)
@@ -220,7 +216,6 @@ DEPENDENCIES
   pg
   procodile
   pry-rails
-  pry-rescue
   puma
   rack-cors
   rails (~> 5.0.0)

@@ -27,17 +27,16 @@ group :development, :test do
 
   # Debugging
   gem 'pry-rails'
-  gem 'pry-rescue'
 
   # Testing
   gem 'rspec-rails'
-
-  # Code quality
-  gem 'rubocop'
-  gem 'rubocop-rspec'
 end
 
 group :development do
+  # Code quality
+  gem 'rubocop'
+  gem 'rubocop-rspec'
+
   # Preloading
   gem 'spring'
   gem 'spring-commands-rspec'
