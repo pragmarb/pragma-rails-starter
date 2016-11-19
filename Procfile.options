@@ -1,3 +1,4 @@
+pid_root: tmp/pids
 log_path: log/procodile.log
 
 processes:
