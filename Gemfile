@@ -18,6 +18,9 @@ gem 'rack-cors'
 group :production do
   # Heroku
   gem 'rails_12factor'
+
+  # Throttling
+  gem 'rack-attack'
 end
 
 group :development, :test do
