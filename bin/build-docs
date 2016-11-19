@@ -1,0 +1,2 @@
+#!/bin/bash
+aglio -i doc/index.apib -o public/index.html --theme-template triple --theme-variables doc/less/theme.less
