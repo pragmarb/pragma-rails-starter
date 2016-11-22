@@ -23,5 +23,8 @@ module Seald
         resource '*', headers: :any, methods: :any
       end
     end
+
+    # Export the schema in SQL, not Ruby.
+    config.active_record.schema_format = :sql
   end
 end
