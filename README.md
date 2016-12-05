@@ -34,7 +34,8 @@ You're ready to go!
 
 ## Documentation
 
-The documentation for the API is written in API Blueprint and stored in the `doc` directory.
+The documentation for the API is written in [API Blueprint](https://apiblueprint.org/) and stored in
+the `doc` directory.
 
 To generate the static documentation, run:
 
@@ -57,7 +58,8 @@ $ bin/rspec
 The application is already configured for deployment on Heroku (including a release comamnd that
 runs DB migrations).
 
-Provided that you have the Heroku toolbelt installed, deploying a new app should be as simple as:
+Provided that you have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed,
+deploying a new app should be as simple as:
 
 ```console
 $ heroku create
