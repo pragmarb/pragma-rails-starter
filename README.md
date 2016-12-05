@@ -24,7 +24,11 @@ Once you've done with the configuration, you can setup the database:
 $ rake db:setup
 ```
 
-You're ready to go!
+Run the application with:
+
+```console
+$ procodile start -d
+```
 
 ## Dependencies
 
