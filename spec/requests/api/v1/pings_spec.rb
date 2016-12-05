@@ -1,8 +1,36 @@
 RSpec.describe '/api/v1/pings' do
   describe 'POST /' do
+    subject { -> { post api_v1_pings_path, params.to_json } }
+
+    let(:params) { { message: Time.zone.now.to_i } }
+
+    it 'responds with 200 OK' do
+      subject.call
+      expect(last_response.status).to eq(200)
+    end
+
     it 'responds with 204 No Content' do
-      post api_v1_pings_path
-      expect(last_response.status).to eq(204)
+      subject.call
+      expect(parsed_response['message']).to eq(params[:message])
+    end
+
+    context "when the 'message' property is missing" do
+      let(:params) { {} }
+
+      it 'responds with 422 Unprocessable Entity' do
+        subject.call
+        expect(last_response.status).to eq(422)
+      end
+
+      it 'responds with an error type' do
+        subject.call
+        expect(parsed_response['error_type']).to be_instance_of(String)
+      end
+
+      it 'responds with an error message' do
+        subject.call
+        expect(parsed_response['error_message']).to be_instance_of(String)
+      end
     end
   end
 end
