@@ -24,12 +24,12 @@ RSpec.describe '/api/v1/pings' do
 
       it 'responds with an error type' do
         subject.call
-        expect(parsed_response['error_type']).to be_instance_of(String)
+        expect(parsed_response).to have_key('error_type')
       end
 
       it 'responds with an error message' do
         subject.call
-        expect(parsed_response['error_message']).to be_instance_of(String)
+        expect(parsed_response).to have_key('error_message')
       end
     end
   end
