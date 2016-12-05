@@ -1,24 +1,76 @@
-# README
+# Rails API Starter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a boilerplate for developing RESTful APIs with Ruby on Rails.
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+To use the boilerplate, simply clone this repo:
 
-* System dependencies
+```console
+$ git clone git://github.com/alessandro1997/rails-api-starter.git my-project
+$ cd my-project
+```
 
-* Configuration
+You will also need to configure the application and the database:
 
-* Database creation
+```console
+$ cp config/database.example.yml config/database.yml
+$ cp config/application.example.yml config/application.yml
+```
 
-* Database initialization
+Once you've done with the configuration, you can setup the database:
 
-* How to run the test suite
+```console
+$ rake db:setup
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+You're ready to go!
 
-* Deployment instructions
+## Dependencies
 
-* ...
+- Ruby 2.3
+- PostgreSQL
+- Rails 5
+
+## Documentation
+
+The documentation for the API is written in [API Blueprint](https://apiblueprint.org/) and stored in
+the `doc` directory.
+
+To generate the static documentation, run:
+
+```console
+$ ./bin/build-docs
+```
+
+The documentation will be accessible at the root of your application.
+
+## Testing
+
+RSpec is configured for testing. To run the tests:
+
+```console
+$ bin/rspec
+```
+
+## Deployment
+
+The application is already configured for deployment on Heroku (including a release comamnd that
+runs DB migrations).
+
+Provided that you have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed,
+deploying a new app should be as simple as:
+
+```console
+$ heroku create
+$ figaro heroku
+$ git push heroku master
+```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/alessandro1997/rails-api-starter.
+
+## License
+
+This software is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
