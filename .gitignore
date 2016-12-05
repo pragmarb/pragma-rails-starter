@@ -17,10 +17,10 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore Byebug command history file.
-.byebug_history
-
 # Ignore configuration files.
 /config/database.yml
 /config/application.yml
 Procfile.local
+
+# Ignore RSpec files.
+/spec/examples.txt
