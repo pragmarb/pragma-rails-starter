@@ -1,6 +1,6 @@
 # To do
 
-- Devise
+- Devise modules
 - Devise::Async
 - Sendgrid
 - Sidekiq
