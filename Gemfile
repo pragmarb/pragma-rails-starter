@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.2'
+ruby '2.3.3'
 
 # Ruby on Rails
 gem 'rails', '~> 5.0.0'
@@ -54,4 +54,3 @@ group :test do
   gem 'shoulda-matchers'
   gem 'webmock'
 end
-
