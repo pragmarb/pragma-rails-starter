@@ -36,6 +36,14 @@ $ procodile start -d
 - PostgreSQL
 - Rails 5
 
+## Tools
+
+- [Puma](http://puma.io/) (web server)
+- [Procodile](https://github.com/adamcooke/procodile) (for process management)
+- [Figaro](https://github.com/laserlemon/figaro) (for configuration management)
+- [Rack::CORS](https://github.com/cyu/rack-cors) (for CORS)
+- [Rack::Attack](https://github.com/kickstarter/rack-attack) (for rate-limiting)
+
 ## Documentation
 
 The documentation for the API is written in [API Blueprint](https://apiblueprint.org/) and stored in
@@ -57,10 +65,13 @@ RSpec is configured for testing. To run the tests:
 $ bin/rspec
 ```
 
+In the tests, you have access to the `#last_response` and `#parsed_response` methods which return,
+respectively, the last response object and the parsed body of the response.
+
 ## Deployment
 
-The application is already configured for deployment on Heroku (including a release comamnd that
-runs DB migrations).
+The application is already configured for deployment on Heroku, including a release command that
+runs DB migrations.
 
 Provided that you have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed,
 deploying a new app should be as simple as:
