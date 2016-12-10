@@ -15,6 +15,9 @@ gem 'figaro'
 # CORS
 gem 'rack-cors'
 
+# Authentication
+gem 'devise'
+
 group :production do
   # Heroku
   gem 'rails_12factor'

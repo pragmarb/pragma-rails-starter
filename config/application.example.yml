@@ -1,3 +1,9 @@
 BIND_HOST: '0.0.0.0'
 SECRET_KEY_BASE: YourSecretKeyBase
 CORS_ORIGINS: '*'
+HOST: example.com
+PROTOCOL: https
+DEVISE_SECRET: YourDeviseSecret
+MAIL_SENDER: noreply@example.com
+APP_NAME: Example App
+DEVISE_PEPPER: YourDevisePepper
