@@ -32,5 +32,8 @@ module Starter
       host: ENV.fetch('HOST'),
       protocol: ENV.fetch('PROTOCOL')
     }
+
+    # Use Sidekiq for executing background jobs.
+    config.active_job.queue_adapter = :sidekiq
   end
 end

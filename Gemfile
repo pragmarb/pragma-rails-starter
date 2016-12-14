@@ -18,6 +18,10 @@ gem 'rack-cors'
 # Authentication
 gem 'devise'
 
+# Background jobs
+gem 'sidekiq'
+gem 'clockwork'
+
 group :production do
   # Heroku
   gem 'rails_12factor'

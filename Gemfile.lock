@@ -51,8 +51,12 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    clockwork (2.0.0)
+      activesupport
+      tzinfo
     coderay (1.1.1)
     concurrent-ruby (1.0.2)
+    connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     database_cleaner (1.5.3)
@@ -118,6 +122,8 @@ GEM
     rack-attack (5.0.1)
       rack
     rack-cors (0.4.0)
+    rack-protection (1.5.3)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.0.1)
@@ -153,6 +159,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    redis (3.3.2)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     rspec-core (3.5.4)
@@ -185,6 +192,11 @@ GEM
     safe_yaml (1.0.4)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
+    sidekiq (4.2.7)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (~> 3.2, >= 3.2.1)
     slop (3.6.0)
     spring (2.0.0)
       activesupport (>= 4.2)
@@ -222,6 +234,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  clockwork
   database_cleaner
   devise
   factory_girl_rails
@@ -240,6 +253,7 @@ DEPENDENCIES
   rubocop
   rubocop-rspec
   shoulda-matchers
+  sidekiq
   spring
   spring-commands-rspec
   spring-watcher-listen
