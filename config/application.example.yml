@@ -10,3 +10,5 @@ DEVISE_PEPPER: YourDevisePepper
 SENDGRID_USERNAME: YourSendgridUsername
 SENDGRID_PASSWORD: YourSendgridPassword
 MAIL_DOMAIN: example.com
+BUGSNAG_API_KEY: YourApiKey
+BUGSNAG_RELEASE_STAGE: development
