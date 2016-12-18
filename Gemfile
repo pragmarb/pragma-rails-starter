@@ -17,6 +17,7 @@ gem 'rack-cors'
 
 # Authentication
 gem 'devise'
+gem 'knock'
 
 # Background jobs
 gem 'sidekiq'
