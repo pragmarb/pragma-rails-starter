@@ -7,7 +7,7 @@ module API
           next unless params[param].blank?
           render_error!(
             :unprocessable_entity,
-            error_type: :missing_parameter,
+            error_type: "missing_#{param}",
             error_message: "The '#{param}' parameter is required for authentication."
           )
         end
