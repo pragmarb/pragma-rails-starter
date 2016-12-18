@@ -36,7 +36,7 @@ $ procodile start -d
 - PostgreSQL
 - Rails 5
 
-## Tools
+## Included tools
 
 - [Puma](http://puma.io/) (web server)
 - [Procodile](https://github.com/adamcooke/procodile) (for process management)
