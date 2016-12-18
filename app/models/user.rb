@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   devise(
-    :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
+    :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable,
+    :confirmable
   )
 
   def send_devise_notification(notification, *args)
