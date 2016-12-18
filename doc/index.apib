@@ -13,7 +13,7 @@ Open `doc/index.apib` to start editing this document!
 
 ### Creating a new ping [POST]
 
-Create a new ping request.
+Creates a new ping request.
 
 #### Request arguments
 
@@ -44,4 +44,50 @@ _message_  | _string_ | Yes       | A message for the server to return.
             {
                 "error_type": "missing_message",
                 "error_message": "You must include a 'message' property in your ping request."
+            }
+
+# Group Tokens
+
+## Token collection [/tokens]
+
+### Creating a new token [POST]
+
+Creates a new token for authentication.
+
+#### Request arguments
+
+Argument      | Type     | Required? | Description
+------------- | -------- | --------- | -----------------------------------
+_email_       | _string_ | Yes       | The email of the user to authenticate with.
+_password_    | _string_ | Yes       | The password of the user to authenticate with.
+
++ Request (application/json)
+  + Body
+
+            {
+              "email": "jdoe@example.com",
+              "password": "password"
+            }
+
++ Response 200 (application/json)
+  + Body
+
+            {
+              "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0ODMyODU2OTYsInN1YiI6MX0.PhhlMId7koio4Fl2m9OHj2glVmOuLrDZugq6QqM1Ni0"
+            }
+
++ Response 401 (application/json)
+  + Body
+
+            {
+              "error_type": "unconfirmed",
+              "error_message": "You have to confirm your email address before continuing."
+            }
+
++ Response 422 (application/json)
+  + Body
+
+            {
+              "error_type": "missing_email",
+              "error_message": "The 'email' parameter is required for authentication."
             }
