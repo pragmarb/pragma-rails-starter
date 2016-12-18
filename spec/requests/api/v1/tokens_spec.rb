@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 RSpec.describe '/api/v1/tokens' do
   describe 'POST /' do
     subject { -> { post api_v1_tokens_path, credentials.to_json } }
