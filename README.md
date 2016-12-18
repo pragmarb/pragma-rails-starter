@@ -43,13 +43,15 @@ $ procodile start -d
 - [Figaro](https://github.com/laserlemon/figaro) (for configuration management)
 - [Rack::CORS](https://github.com/cyu/rack-cors) (for CORS)
 - [Rack::Attack](https://github.com/kickstarter/rack-attack) (for rate-limiting)
+- [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) (for authentication)
 
 ## Documentation
 
 The documentation for the API is written in [API Blueprint](https://apiblueprint.org/) and stored in
 the `doc` directory.
 
-To generate the static documentation, run:
+We use [Aglio](https://github.com/danielgtaylor/aglio) to generate HTML from the API Blueprint
+documents. To generate the static documentation, run:
 
 ```console
 $ ./bin/build-docs
