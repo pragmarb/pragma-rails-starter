@@ -46,7 +46,7 @@ The following tools are included and configured in the boilerplate:
 - [Rack::CORS](https://github.com/cyu/rack-cors) for CORS;
 - [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting;
 - [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) for authentication;
-- [Bugsnag](https://bugsnag.com) for error trackng.
+- [Bugsnag](https://bugsnag.com) for error tracking.
 
 ## Documentation
 
