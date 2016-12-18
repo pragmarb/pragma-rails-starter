@@ -60,9 +60,9 @@ RSpec.describe '/api/v1/tokens' do
         }
       end
 
-      it 'responds with 422 Unprocessable Entity' do
+      it 'responds with 401 Unauthorized' do
         subject.call
-        expect(last_response.status).to eq(422)
+        expect(last_response.status).to eq(401)
       end
     end
   end
