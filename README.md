@@ -18,7 +18,7 @@ $ cp config/database.example.yml config/database.yml
 $ cp config/application.example.yml config/application.yml
 ```
 
-Once you've done with the configuration, you can setup the database:
+Once you're done with the configuration, you can setup the database:
 
 ```console
 $ rake db:setup
