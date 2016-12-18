@@ -18,7 +18,7 @@ $ cp config/database.example.yml config/database.yml
 $ cp config/application.example.yml config/application.yml
 ```
 
-Once you've done with the configuration, you can setup the database:
+Once you're done with the configuration, you can setup the database:
 
 ```console
 $ rake db:setup
@@ -36,20 +36,25 @@ $ procodile start -d
 - PostgreSQL
 - Rails 5
 
-## Tools
+## Included tools
 
-- [Puma](http://puma.io/) (web server)
-- [Procodile](https://github.com/adamcooke/procodile) (for process management)
-- [Figaro](https://github.com/laserlemon/figaro) (for configuration management)
-- [Rack::CORS](https://github.com/cyu/rack-cors) (for CORS)
-- [Rack::Attack](https://github.com/kickstarter/rack-attack) (for rate-limiting)
+The following tools are included and configured in the boilerplate:
+
+- [Puma](http://puma.io/) as the web server;
+- [Procodile](https://github.com/adamcooke/procodile) for process management;
+- [Figaro](https://github.com/laserlemon/figaro) for configuration management;
+- [Rack::CORS](https://github.com/cyu/rack-cors) for CORS;
+- [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting;
+- [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) for authentication;
+- [Bugsnag](https://bugsnag.com) for error trackng.
 
 ## Documentation
 
 The documentation for the API is written in [API Blueprint](https://apiblueprint.org/) and stored in
 the `doc` directory.
 
-To generate the static documentation, run:
+We use [Aglio](https://github.com/danielgtaylor/aglio) to generate HTML from the API Blueprint
+documents. To generate the static documentation, run:
 
 ```console
 $ ./bin/build-docs
