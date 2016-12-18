@@ -2,4 +2,5 @@
 
 - Devise modules
 - Mailer layout
-- Bugsnag
+- Pagination
+- Serialization (?)
