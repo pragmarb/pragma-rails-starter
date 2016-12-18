@@ -13,9 +13,13 @@ module API
         end
       end
 
+      before_bugsnag_notify :add_user_info_to_bugsnag
+
       rescue_from ApplicationError do |error|
         render_error error.status, error.options
       end
+
+      protected
 
       def render_error(status, options = {})
         render status: status, json: options
@@ -23,6 +27,13 @@ module API
 
       def render_error!(status, options = {})
         fail ApplicationError.new(status, options)
+      end
+
+      private
+
+      def add_user_info_to_bugsnag(notification)
+        return unless current_user
+        notification.user = { id: current_user.id }
       end
     end
   end

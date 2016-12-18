@@ -43,6 +43,7 @@ GEM
     arel (7.1.4)
     ast (2.3.0)
     bcrypt (3.1.11)
+    bugsnag (5.0.1)
     builder (3.2.2)
     capybara (2.10.1)
       addressable
@@ -238,6 +239,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bugsnag
   capybara
   clockwork
   database_cleaner

@@ -23,6 +23,9 @@ gem 'knock'
 gem 'sidekiq'
 gem 'clockwork'
 
+# Error reporting
+gem 'bugsnag'
+
 group :production do
   # Heroku
   gem 'rails_12factor'
