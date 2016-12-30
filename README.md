@@ -45,8 +45,8 @@ The following tools are included and configured in the boilerplate:
 - [Figaro](https://github.com/laserlemon/figaro) for configuration management
 - [Rack::CORS](https://github.com/cyu/rack-cors) for CORS
 - [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting
-- [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) for authentication
 - [Pragma](https://github.com/pragmarb/pragma) for business logic
+- [Pragma::Devise](https://github.com/pragmarb/pragma-devise) for authentication
 - [Bugsnag](https://bugsnag.com) for error tracking
 
 ## Documentation
