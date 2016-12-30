@@ -10,7 +10,7 @@ RSpec.describe '/api/v1/pings' do
       expect(last_response.status).to eq(200)
     end
 
-    it 'responds with 204 No Content' do
+    it 'responds with the message' do
       subject.call
       expect(parsed_response['message']).to eq(params[:message])
     end

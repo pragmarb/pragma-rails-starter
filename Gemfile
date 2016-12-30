@@ -26,6 +26,9 @@ gem 'clockwork'
 # Error reporting
 gem 'bugsnag'
 
+# API
+gem 'pragma-rails', github: 'pragmarb/pragma-rails'
+
 group :production do
   # Heroku
   gem 'rails_12factor'
