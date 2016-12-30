@@ -40,13 +40,14 @@ $ procodile start -d
 
 The following tools are included and configured in the boilerplate:
 
-- [Puma](http://puma.io/) as the web server;
-- [Procodile](https://github.com/adamcooke/procodile) for process management;
-- [Figaro](https://github.com/laserlemon/figaro) for configuration management;
-- [Rack::CORS](https://github.com/cyu/rack-cors) for CORS;
-- [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting;
-- [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) for authentication;
-- [Bugsnag](https://bugsnag.com) for error tracking.
+- [Puma](http://puma.io/) as the web server
+- [Procodile](https://github.com/adamcooke/procodile) for process management
+- [Figaro](https://github.com/laserlemon/figaro) for configuration management
+- [Rack::CORS](https://github.com/cyu/rack-cors) for CORS
+- [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting
+- [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) for authentication
+- [Pragma](https://github.com/pragmarb/pragma) for business logic
+- [Bugsnag](https://bugsnag.com) for error tracking
 
 ## Documentation
 
