@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/pragmarb/pragma-devise.git
+  revision: b9f223c257b351cebe7f537f73bd05dc25ce8c8f
+  specs:
+    pragma-devise (0.1.0)
+      devise (~> 4.2)
+      pragma-rails (~> 0.1)
+      rails (>= 4.2, < 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -317,6 +326,7 @@ DEPENDENCIES
   fuubar
   knock
   pg
+  pragma-devise!
   pragma-rails
   procodile
   pry-rails

@@ -28,6 +28,7 @@ gem 'bugsnag'
 
 # API
 gem 'pragma-rails'
+gem 'pragma-devise', github: 'pragmarb/pragma-devise'
 
 group :production do
   # Heroku
