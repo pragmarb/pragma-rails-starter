@@ -32,7 +32,7 @@ RSpec.describe '/api/v1/recoveries' do
     end
 
     context 'when no email is provided' do
-      let(:body) { { } }
+      let(:body) { {} }
 
       it 'responds with 422 Unprocessable Entity' do
         subject.call
