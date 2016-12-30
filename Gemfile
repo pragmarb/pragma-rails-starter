@@ -27,7 +27,7 @@ gem 'clockwork'
 gem 'bugsnag'
 
 # API
-gem 'pragma-rails', github: 'pragmarb/pragma-rails'
+gem 'pragma-rails'
 
 group :production do
   # Heroku
