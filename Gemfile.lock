@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/pragmarb/pragma-rails.git
-  revision: f8aa0e3f47db8d44a66412ffd02b2462765c1ef1
+  revision: 3644800e127c47136e8ae9f8148a17ec4254683f
   specs:
-    pragma-rails (0.1.0)
+    pragma-rails (0.1.1)
       pragma (~> 0.1.0)
       rails (>= 4.2.0, < 6)
 
