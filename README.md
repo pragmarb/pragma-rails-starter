@@ -1,4 +1,4 @@
-# Rails API Starter
+# Pragma/Rails Starter
 
 This is a boilerplate for developing RESTful APIs with Ruby on Rails.
 
@@ -7,7 +7,7 @@ This is a boilerplate for developing RESTful APIs with Ruby on Rails.
 To use the boilerplate, simply clone this repo:
 
 ```console
-$ git clone git://github.com/alessandro1997/rails-api-starter.git my-project
+$ git clone git://github.com/pragmarb/pragma-rails-starter.git my-project
 $ cd my-project
 ```
 
@@ -30,6 +30,17 @@ Run the application with:
 $ procodile start -d
 ```
 
+## Updates
+
+You can keep the starter up to date even after you start development on the application by adding
+it as a separate repo:
+
+```console
+$ git remote add upstream git://github.com/pragmarb/pragma-rails-starter.git
+$ git fetch upstream
+$ git merge upstream master
+```
+
 ## Dependencies
 
 - Ruby 2.3
@@ -40,13 +51,14 @@ $ procodile start -d
 
 The following tools are included and configured in the boilerplate:
 
-- [Puma](http://puma.io/) as the web server;
-- [Procodile](https://github.com/adamcooke/procodile) for process management;
-- [Figaro](https://github.com/laserlemon/figaro) for configuration management;
-- [Rack::CORS](https://github.com/cyu/rack-cors) for CORS;
-- [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting;
-- [Devise](https://github.com/plataformatec/devise) and [Knock](https://github.com/nsarno/knock) for authentication;
-- [Bugsnag](https://bugsnag.com) for error tracking.
+- [Puma](http://puma.io/) as the web server
+- [Procodile](https://github.com/adamcooke/procodile) for process management
+- [Figaro](https://github.com/laserlemon/figaro) for configuration management
+- [Rack::CORS](https://github.com/cyu/rack-cors) for CORS
+- [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting
+- [Pragma](https://github.com/pragmarb/pragma) for business logic
+- [Pragma::Devise](https://github.com/pragmarb/pragma-devise) for authentication
+- [Bugsnag](https://bugsnag.com) for error tracking
 
 ## Documentation
 

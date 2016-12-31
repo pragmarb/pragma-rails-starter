@@ -12,3 +12,5 @@ SENDGRID_PASSWORD: YourSendgridPassword
 MAIL_DOMAIN: example.com
 BUGSNAG_API_KEY: YourApiKey
 BUGSNAG_RELEASE_STAGE: development
+FRONTEND_CONFIRMATION_URL: 'https://www.example.com/confirm?confirmation_token=%{confirmation_token}'
+FRONTEND_PASSWORD_RESET_URL: 'https://www.example.com/password-reset?reset_password_token=%{reset_password_token}'

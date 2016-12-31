@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      mount Pragma::Devise::Engine => '/'
+
       resources :pings, only: %i(create)
-      resources :tokens, only: %i(create)
     end
   end
 end

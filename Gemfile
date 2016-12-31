@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.4.0'
 
 # Ruby on Rails
 gem 'rails', '~> 5.0.0'
@@ -25,6 +25,10 @@ gem 'clockwork'
 
 # Error reporting
 gem 'bugsnag'
+
+# API
+gem 'pragma-rails'
+gem 'pragma-devise', github: 'pragmarb/pragma-devise'
 
 group :production do
   # Heroku
