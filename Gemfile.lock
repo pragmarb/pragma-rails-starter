@@ -1,6 +1,16 @@
 GIT
+  remote: git://github.com/alessandro1997/knock.git
+  revision: 328431680cc81258283108c4bbcb29664aa7f34a
+  branch: specific-rescue
+  specs:
+    knock (2.0)
+      bcrypt (~> 3.1)
+      jwt (~> 1.5)
+      rails (>= 4.2)
+
+GIT
   remote: git://github.com/pragmarb/pragma-devise.git
-  revision: 988179eb0eeaedbb27bbb3994c37040ace0117b3
+  revision: 4fd0ba9884779deb11ee8ac05225edb4c3b7af38
   specs:
     pragma-devise (0.1.0)
       devise (~> 4.2)
@@ -134,10 +144,6 @@ GEM
     interactor (3.1.0)
     json (2.0.2)
     jwt (1.5.6)
-    knock (2.0)
-      bcrypt (~> 3.1)
-      jwt (~> 1.5)
-      rails (>= 4.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -161,7 +167,7 @@ GEM
       ast (~> 2.2)
     pg (0.19.0)
     powerpack (0.1.1)
-    pragma (0.1.3)
+    pragma (0.1.4)
       pragma-contract (~> 0.1)
       pragma-decorator (~> 0.1)
       pragma-operation (~> 1.2)
@@ -301,7 +307,7 @@ GEM
     unicode-display_width (1.1.2)
     warden (1.2.6)
       rack (>= 1.0)
-    webmock (2.3.1)
+    webmock (2.3.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -325,7 +331,7 @@ DEPENDENCIES
   faker
   figaro
   fuubar
-  knock
+  knock!
   pg
   pragma-devise!
   pragma-rails

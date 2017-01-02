@@ -5,9 +5,9 @@ RSpec.describe '/api/v1/pings' do
 
     let(:params) { { message: Time.zone.now.to_i } }
 
-    it 'responds with 200 OK' do
+    it 'responds with 201 Created' do
       subject.call
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(201)
     end
 
     it 'responds with the message' do

@@ -15,9 +15,13 @@ gem 'figaro'
 # CORS
 gem 'rack-cors'
 
+# API
+gem 'pragma-rails'
+
 # Authentication
 gem 'devise'
-gem 'knock'
+gem 'knock', github: 'alessandro1997/knock', branch: 'specific-rescue'
+gem 'pragma-devise', github: 'pragmarb/pragma-devise'
 
 # Background jobs
 gem 'sidekiq'
@@ -25,10 +29,6 @@ gem 'clockwork'
 
 # Error reporting
 gem 'bugsnag'
-
-# API
-gem 'pragma-rails'
-gem 'pragma-devise', github: 'pragmarb/pragma-devise'
 
 group :production do
   # Heroku
