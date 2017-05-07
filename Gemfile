@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.4.0'
 
 # Ruby on Rails
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.1.0'
 
 # ActiveRecord
 gem 'pg'
@@ -17,11 +17,6 @@ gem 'rack-cors'
 
 # API
 gem 'pragma-rails'
-
-# Authentication
-gem 'devise'
-gem 'knock', github: 'alessandro1997/knock', branch: 'specific-rescue'
-gem 'pragma-devise', github: 'pragmarb/pragma-devise'
 
 # Background jobs
 gem 'sidekiq'

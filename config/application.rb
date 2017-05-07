@@ -24,9 +24,6 @@ module Starter
       end
     end
 
-    # Export the schema in SQL, not Ruby.
-    config.active_record.schema_format = :sql
-
     # Configures the URL options to use outside of the request context.
     config.action_mailer.default_url_options = {
       host: ENV.fetch('HOST'),
