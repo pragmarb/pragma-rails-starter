@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/pragmarb/pragma-contract.git
-  revision: ce77db9b2ebdf92ff8e5fa89b8996a87ae3554db
-  branch: 2.0.0
+  revision: 33fdacdf785bbf0f815b3b520338d95ebfe34659
   specs:
     pragma-contract (2.0.0)
       dry-types (~> 0.9)
@@ -10,8 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/pragmarb/pragma-decorator.git
-  revision: a1ae485e2e552554c997ce8a5836602feda609bb
-  branch: 2.0.0
+  revision: 5d978c0ba4c132c99c1b10a14d5756ee2f49c3fb
   specs:
     pragma-decorator (2.0.0)
       multi_json (~> 1.12)
@@ -19,8 +17,7 @@ GIT
 
 GIT
   remote: git://github.com/pragmarb/pragma-operation.git
-  revision: 92aea5c1f2b308a87fe57062262efe7565b35e3d
-  branch: 2.0.0
+  revision: caa81e0bf511ede24f7ea48e5eb5c7a5329f317b
   specs:
     pragma-operation (2.0.0)
       trailblazer-operation (~> 0.0)
@@ -28,15 +25,13 @@ GIT
 GIT
   remote: git://github.com/pragmarb/pragma-policy.git
   revision: c1cae9989827c4ad47efe89b1014b5f40fafbe10
-  branch: 2.0.0
   specs:
     pragma-policy (2.0.0)
       pundit (~> 1.1)
 
 GIT
   remote: git://github.com/pragmarb/pragma-rails.git
-  revision: d40267aca08470b9e945dea55e22243756089a45
-  branch: 2.0.0
+  revision: 7993d9989a4e25ac85e91ca140fc3491299a1dc8
   specs:
     pragma-rails (2.0.0)
       pragma (~> 2.0)
@@ -44,8 +39,7 @@ GIT
 
 GIT
   remote: git://github.com/pragmarb/pragma.git
-  revision: 6b275b11a65c0c9a9f6acad04112e3e6e6b095b9
-  branch: 2.0.0
+  revision: d5b8536552b52298f21639c2fe4f6e7de858da93
   specs:
     pragma (2.0.0)
       pragma-contract (~> 2.0)

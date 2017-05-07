@@ -16,12 +16,12 @@ gem 'figaro'
 gem 'rack-cors'
 
 # API
-gem 'pragma-rails', github: 'pragmarb/pragma-rails', branch: '2.0.0'
-gem 'pragma', github: 'pragmarb/pragma', branch: '2.0.0'
-gem 'pragma-decorator', github: 'pragmarb/pragma-decorator', branch: '2.0.0'
-gem 'pragma-policy', github: 'pragmarb/pragma-policy', branch: '2.0.0'
-gem 'pragma-contract', github: 'pragmarb/pragma-contract', branch: '2.0.0'
-gem 'pragma-operation', github: 'pragmarb/pragma-operation', branch: '2.0.0'
+gem 'pragma-rails', github: 'pragmarb/pragma-rails'
+gem 'pragma', github: 'pragmarb/pragma'
+gem 'pragma-decorator', github: 'pragmarb/pragma-decorator'
+gem 'pragma-policy', github: 'pragmarb/pragma-policy'
+gem 'pragma-contract', github: 'pragmarb/pragma-contract'
+gem 'pragma-operation', github: 'pragmarb/pragma-operation'
 
 # Background jobs
 gem 'sidekiq'
