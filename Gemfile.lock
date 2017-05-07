@@ -1,3 +1,58 @@
+GIT
+  remote: git://github.com/pragmarb/pragma-contract.git
+  revision: ce77db9b2ebdf92ff8e5fa89b8996a87ae3554db
+  branch: 2.0.0
+  specs:
+    pragma-contract (2.0.0)
+      dry-types (~> 0.9)
+      dry-validation (~> 0.10)
+      reform (~> 2.2)
+
+GIT
+  remote: git://github.com/pragmarb/pragma-decorator.git
+  revision: a1ae485e2e552554c997ce8a5836602feda609bb
+  branch: 2.0.0
+  specs:
+    pragma-decorator (2.0.0)
+      multi_json (~> 1.12)
+      roar (~> 1.0)
+
+GIT
+  remote: git://github.com/pragmarb/pragma-operation.git
+  revision: 92aea5c1f2b308a87fe57062262efe7565b35e3d
+  branch: 2.0.0
+  specs:
+    pragma-operation (2.0.0)
+      trailblazer-operation (~> 0.0)
+
+GIT
+  remote: git://github.com/pragmarb/pragma-policy.git
+  revision: c1cae9989827c4ad47efe89b1014b5f40fafbe10
+  branch: 2.0.0
+  specs:
+    pragma-policy (2.0.0)
+      pundit (~> 1.1)
+
+GIT
+  remote: git://github.com/pragmarb/pragma.git
+  revision: 6b275b11a65c0c9a9f6acad04112e3e6e6b095b9
+  branch: 2.0.0
+  specs:
+    pragma (2.0.0)
+      pragma-contract (~> 2.0)
+      pragma-decorator (~> 2.0)
+      pragma-operation (~> 2.0)
+      pragma-policy (~> 2.0)
+      trailblazer (~> 2.0)
+      will_paginate (~> 3.1)
+
+PATH
+  remote: ../pragma-rails
+  specs:
+    pragma-rails (2.0.0)
+      pragma (~> 2.0)
+      rails (>= 4.2, < 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -119,7 +174,6 @@ GEM
     hashdiff (0.3.4)
     i18n (0.8.1)
     inflecto (0.0.2)
-    interactor (3.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -141,26 +195,8 @@ GEM
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.20.0)
+    pipetree (0.1.1)
     powerpack (0.1.1)
-    pragma (1.2.4)
-      pragma-contract (~> 0.1)
-      pragma-decorator (~> 1.0)
-      pragma-operation (~> 1.2)
-      pragma-policy (~> 0.1)
-      will_paginate (~> 3.1)
-    pragma-contract (0.1.0)
-      dry-types (~> 0.9)
-      dry-validation (~> 0.10)
-      reform (~> 2.2)
-    pragma-decorator (1.1.0)
-      multi_json (~> 1.12)
-      roar (~> 1.0)
-    pragma-operation (1.6.2)
-      interactor (~> 3.1.0)
-    pragma-policy (0.1.0)
-    pragma-rails (1.1.1)
-      pragma (~> 1.0)
-      rails (>= 4.2, < 6)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -169,6 +205,8 @@ GEM
       pry (>= 0.10.4)
     public_suffix (2.0.5)
     puma (3.8.2)
+    pundit (1.1.0)
+      activesupport (>= 3.0.0)
     rack (2.0.1)
     rack-attack (5.0.1)
       rack
@@ -273,6 +311,14 @@ GEM
       sprockets (>= 3.0.0)
     thor (0.19.4)
     thread_safe (0.3.6)
+    trailblazer (2.0.6)
+      declarative
+      reform (>= 2.2.0, < 3.0.0)
+      trailblazer-operation (>= 0.0.12, < 0.1.0)
+    trailblazer-operation (0.0.13)
+      declarative
+      pipetree (>= 0.1.1, < 0.2.0)
+      uber
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     uber (0.1.0)
@@ -302,7 +348,12 @@ DEPENDENCIES
   foreman
   fuubar
   pg
-  pragma-rails
+  pragma!
+  pragma-contract!
+  pragma-decorator!
+  pragma-operation!
+  pragma-policy!
+  pragma-rails!
   pry-rails
   puma
   rack-attack
