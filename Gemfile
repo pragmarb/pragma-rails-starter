@@ -2,26 +2,26 @@ source 'https://rubygems.org'
 ruby '2.4.0'
 
 # Ruby on Rails
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.1.0'
 
 # ActiveRecord
 gem 'pg'
 
 # Orchestration
 gem 'puma'
-gem 'procodile'
+gem 'foreman'
 gem 'figaro'
 
 # CORS
 gem 'rack-cors'
 
 # API
-gem 'pragma-rails'
-
-# Authentication
-gem 'devise'
-gem 'knock', github: 'alessandro1997/knock', branch: 'specific-rescue'
-gem 'pragma-devise', github: 'pragmarb/pragma-devise'
+gem 'pragma-rails', github: 'pragmarb/pragma-rails', branch: '2.0.0'
+gem 'pragma', github: 'pragmarb/pragma', branch: '2.0.0'
+gem 'pragma-decorator', github: 'pragmarb/pragma-decorator', branch: '2.0.0'
+gem 'pragma-policy', github: 'pragmarb/pragma-policy', branch: '2.0.0'
+gem 'pragma-contract', github: 'pragmarb/pragma-contract', branch: '2.0.0'
+gem 'pragma-operation', github: 'pragmarb/pragma-operation', branch: '2.0.0'
 
 # Background jobs
 gem 'sidekiq'
