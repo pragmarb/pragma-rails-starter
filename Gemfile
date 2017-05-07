@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'rack-cors'
 
 # API
-gem 'pragma-rails', path: '../pragma-rails', branch: '2.0.0'
+gem 'pragma-rails', github: 'pragmarb/pragma-rails', branch: '2.0.0'
 gem 'pragma', github: 'pragmarb/pragma', branch: '2.0.0'
 gem 'pragma-decorator', github: 'pragmarb/pragma-decorator', branch: '2.0.0'
 gem 'pragma-policy', github: 'pragmarb/pragma-policy', branch: '2.0.0'

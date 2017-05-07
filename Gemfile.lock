@@ -34,6 +34,15 @@ GIT
       pundit (~> 1.1)
 
 GIT
+  remote: git://github.com/pragmarb/pragma-rails.git
+  revision: d40267aca08470b9e945dea55e22243756089a45
+  branch: 2.0.0
+  specs:
+    pragma-rails (2.0.0)
+      pragma (~> 2.0)
+      rails (>= 4.2, < 6)
+
+GIT
   remote: git://github.com/pragmarb/pragma.git
   revision: 6b275b11a65c0c9a9f6acad04112e3e6e6b095b9
   branch: 2.0.0
@@ -45,13 +54,6 @@ GIT
       pragma-policy (~> 2.0)
       trailblazer (~> 2.0)
       will_paginate (~> 3.1)
-
-PATH
-  remote: ../pragma-rails
-  specs:
-    pragma-rails (2.0.0)
-      pragma (~> 2.0)
-      rails (>= 4.2, < 6)
 
 GEM
   remote: https://rubygems.org/
