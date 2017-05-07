@@ -109,6 +109,8 @@ GEM
     ffi (1.9.18)
     figaro (1.1.1)
       thor (~> 0.14)
+    foreman (0.84.0)
+      thor (~> 0.19.1)
     fuubar (2.2.0)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
@@ -118,7 +120,6 @@ GEM
     i18n (0.8.1)
     inflecto (0.0.2)
     interactor (3.1.0)
-    json (2.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -160,8 +161,6 @@ GEM
     pragma-rails (1.1.1)
       pragma (~> 1.0)
       rails (>= 4.2, < 6)
-    procodile (1.0.16)
-      json
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -300,10 +299,10 @@ DEPENDENCIES
   factory_girl_rails
   faker
   figaro
+  foreman
   fuubar
   pg
   pragma-rails
-  procodile
   pry-rails
   puma
   rack-attack

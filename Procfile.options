@@ -1,9 +1,0 @@
-pid_root: tmp/pids
-log_path: log/procodile.log
-
-processes:
-  web:
-    env:
-      BIND_HOST: 127.0.0.1
-  release:
-    quantity: 0

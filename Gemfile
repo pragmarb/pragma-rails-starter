@@ -9,7 +9,7 @@ gem 'pg'
 
 # Orchestration
 gem 'puma'
-gem 'procodile'
+gem 'foreman'
 gem 'figaro'
 
 # CORS
