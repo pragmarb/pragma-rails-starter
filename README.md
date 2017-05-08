@@ -27,7 +27,7 @@ $ rake db:setup
 Run the application with:
 
 ```console
-$ procodile start -d
+$ foreman s -f Procfile.development
 ```
 
 ## Updates
@@ -52,27 +52,13 @@ $ git merge upstream master
 The following tools are included and configured in the boilerplate:
 
 - [Puma](http://puma.io/) as the web server
-- [Procodile](https://github.com/adamcooke/procodile) for process management
+- [Foreman](https://github.com/ddollar/foreman) for process management
 - [Figaro](https://github.com/laserlemon/figaro) for configuration management
 - [Rack::CORS](https://github.com/cyu/rack-cors) for CORS
 - [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting
 - [Pragma](https://github.com/pragmarb/pragma) for business logic
 - [Pragma::Devise](https://github.com/pragmarb/pragma-devise) for authentication
 - [Bugsnag](https://bugsnag.com) for error tracking
-
-## Documentation
-
-The documentation for the API is written in [API Blueprint](https://apiblueprint.org/) and stored in
-the `doc` directory.
-
-We use [Aglio](https://github.com/danielgtaylor/aglio) to generate HTML from the API Blueprint
-documents. To generate the static documentation, run:
-
-```console
-$ ./bin/build-docs
-```
-
-The documentation will be accessible at the root of your application.
 
 ## Testing
 
@@ -101,7 +87,7 @@ $ git push heroku master
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/alessandro1997/rails-api-starter.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pragmarb/rails-api-starter.
 
 ## License
 
