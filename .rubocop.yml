@@ -59,7 +59,7 @@ Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
 Lint/EndAlignment:
-  AlignWith: variable
+  EnforcedStyleAlignWith: variable
   AutoCorrect: true
 
 Style/AndOr:
@@ -87,6 +87,9 @@ Metrics/MethodLength:
   Enabled: false
 
 Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/BlockLength:
   Enabled: false
 
 Rails/HttpPositionalArguments:
