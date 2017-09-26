@@ -58,6 +58,8 @@ The following tools are included and configured in the boilerplate:
 - [Rack::Attack](https://github.com/kickstarter/rack-attack) for rate-limiting
 - [Pragma](https://github.com/pragmarb/pragma) for business logic
 - [Bugsnag](https://bugsnag.com) for error tracking
+- [CircleCI](https://circleic.com) for CI
+- [Docker](https://docker.com) and [Compose](https://docs.docker.com/compose/) configuration
 
 ## Testing
 
