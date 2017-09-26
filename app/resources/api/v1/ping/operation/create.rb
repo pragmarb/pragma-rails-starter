@@ -15,7 +15,7 @@ module API
           step Pragma::Operation::Macro::Contract::Validate()
           failure :handle_invalid_contract!, fail_fast: true
           step :sync!
-          step Pragma::Operation::Macro::Decorator()
+          step Pragma::Operation::Macro::Decorator(name: :instance)
           step :respond!
 
           def handle_unauthorized!(options)
@@ -36,7 +36,7 @@ module API
 
           def respond!(options)
             options['result.response'] = Pragma::Operation::Response::Created.new(
-              entity: options['result.decorator.default']
+              entity: options['result.decorator.instance']
             )
           end
         end
