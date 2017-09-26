@@ -1,0 +1,18 @@
+version: '2'
+services:
+  db:
+    image: mdillon/postgis
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis
+  web:
+    build: .
+    command: bundle exec foreman start -f Procfile.development
+    volumes:
+      - .:/pragma-rails-starter
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+      - redis
