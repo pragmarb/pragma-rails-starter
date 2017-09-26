@@ -59,7 +59,7 @@ The following tools are included and configured in the boilerplate:
 - [Pragma](https://github.com/pragmarb/pragma) for business logic
 - [Bugsnag](https://bugsnag.com) for error tracking
 - [CircleCI](https://circleci.com) for continuous integration
-- [Docker](https://docker.com) and [Compose](https://docs.docker.com/compose/) configuration
+- [Docker](https://docker.com) and [Compose](https://docs.docker.com/compose/) for containerization
 
 ## Testing
 
@@ -88,7 +88,7 @@ $ git push heroku master
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pragmarb/rails-api-starter.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pragmarb/pragma-rails-starter.
 
 ## License
 
