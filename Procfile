@@ -1,4 +1,4 @@
-web: bundle exec rails s -b 0.0.0.0
-release: bundle exec rails db:migrate
+web: bundle exec puma -C config/puma.rb
 worker: bundle exec sidekiq -q default -q mailers
 scheduler: bundle exec clockwork config/clock.rb
+release: bundle exec rails db:migrate
