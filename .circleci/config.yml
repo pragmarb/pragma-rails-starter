@@ -82,27 +82,6 @@ jobs:
               git push heroku-dev develop:master
             fi
 
-  eb_deploy:
-    working_directory: ~/pragma-rails-starter
-    docker:
-      - image: ruby:2.4.2
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/pragma-rails-starter
-      - deploy:
-          name: Deploy to EB
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "develop" ]; then
-              bash .circleci/setup-eb.sh
-              apt-get update -qq
-              apt-get upgrade -y -qq
-              apt-get install -y python-dev python-pip
-              easy_install --upgrade six
-              pip install awsebcli
-              eb deploy develop
-            fi
-
 workflows:
   version: 2
   test-and-deploy:
@@ -112,15 +91,6 @@ workflows:
           requires:
             - bundle_dependencies
       - heroku_deploy:
-          requires:
-            - test
-          filters:
-            branches:
-              only:
-                - develop
-                - staging
-                - master
-      - eb_deploy:
           requires:
             - test
           filters:
