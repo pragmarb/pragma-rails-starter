@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.5.1'
 
@@ -8,9 +10,9 @@ gem 'rails', '~> 5.1.0'
 gem 'pg', '~> 0.21'
 
 # Orchestration
-gem 'puma'
-gem 'foreman'
 gem 'figaro'
+gem 'foreman'
+gem 'puma'
 
 # CORS
 gem 'rack-cors'
@@ -19,8 +21,8 @@ gem 'rack-cors'
 gem 'pragma-rails', '~> 2.0'
 
 # Background jobs
-gem 'sidekiq'
 gem 'clockwork'
+gem 'sidekiq'
 
 # Error reporting
 gem 'bugsnag'
