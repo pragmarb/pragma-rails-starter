@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.5.1'
 
 # Ruby on Rails
 gem 'rails', '~> 5.1.0'
 
 # ActiveRecord
-gem 'pg'
+gem 'pg', '~> 0.21'
 
 # Orchestration
 gem 'puma'
