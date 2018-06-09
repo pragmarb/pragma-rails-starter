@@ -4,7 +4,7 @@ jobs:
   bundle_dependencies:
     working_directory: ~/pragma-rails-starter
     docker:
-      - image: ruby:2.4.2
+      - image: ruby:2.5.1
     steps:
       - checkout
       - attach_workspace:
